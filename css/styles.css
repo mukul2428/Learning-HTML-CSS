@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav_bar{
+    display: flex;
+    background-color: black;
+    overflow: hidden;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+}
+.comp_name{
+    padding: 29px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+.nav-part{
+    display: flex;
+    flex-grow: 1;
+}
+.nav-part2{
+    flex-grow: 1;
+}
+ul{
+    display: flex;
+    padding: 18px;
+}
+li{
+    padding: 18px;
+    font-size: larger;
+    list-style-type: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+.form{
+    padding: 29px;
+    text-align: right;
+}
+.search{
+    width: 220px;
+    height: 30px;
+    border-radius: 9px;
+    padding-left: 10px;
+}
+.btn{
+    border-radius: 10px;
+    width: 68px;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+    border: 2px solid white;
+    background: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    color: orange;
+}
+.practice{
+    display: flex;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: white;
+    transition: width 2s, height 4s, border-radius 4s, background 4s;
+}
+.content:hover{
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
+    background: green;
+}
+.transitions{
+    margin: 20px;
+    animation: bouncing 0.5s ease 0s infinite alternate both;
+    background: darkblue;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 1.7em 2em 1.1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    margin-top: 100px;
+}
+@keyframes bouncing {
+
+    0%{
+        bottom: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    }
+    100%{
+        bottom: 50px;
+        box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+    }
+}
